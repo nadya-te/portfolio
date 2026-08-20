@@ -1,0 +1,141 @@
+/*
+  Design tokens — mirrors the Figma tokens 1:1.
+  Do not hardcode colors or type sizes outside this file; reference variables/classes instead.
+*/
+
+@font-face {
+  font-family: "Factor A";
+  src: url("fonts/Factor A-Regular-Web.woff2") format("woff2"), url("fonts/Factor A-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Factor A";
+  src: url("fonts/Factor A-Italic-Web.woff2") format("woff2"), url("fonts/Factor A-Italic-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Factor A";
+  src: url("fonts/Factor A-Bold-Web.woff2") format("woff2"), url("fonts/Factor A-Bold-Web.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Factor A";
+  src: url("fonts/Factor A-Extrabold-Web.woff2") format("woff2"), url("fonts/Factor A-Extrabold-Web.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  /* Color primitives */
+  --color-indigo-900: #362f73;
+  --color-white: #ffffff;
+  --color-violet-400: #ada4ff;
+  --color-violet-500: #665af7;
+  --color-gray-300: #d9d9d9;
+  --color-violet-200: #dfdaff;
+  --color-indigo-900-50: rgba(54, 47, 115, 0.5);
+  --color-white-muted: rgba(255, 255, 255, 0.6);
+
+  /* Semantic colors */
+  --bg-primary: var(--color-indigo-900);
+  --bg-surface: var(--color-white);
+  --bg-accent: var(--color-violet-400);
+  --bg-accent-subtle: var(--color-violet-200);
+  --bg-placeholder: var(--color-gray-300);
+  --text-primary: var(--color-white);
+  --text-primary-secondary: var(--color-white-muted);
+  --text-on-surface: var(--color-indigo-900);
+  --text-on-surface-secondary: var(--color-indigo-900-50);
+  --text-accent: var(--color-violet-500);
+  --stroke-default: var(--color-white);
+
+  /* Font families */
+  --font-heading: "Roboto Condensed", sans-serif;
+  --font-body: "Factor A", sans-serif;
+
+  /* Spacing */
+  --space-2xs: 8px;
+  --space-xs: 10px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 36px;
+  --space-2xl: 48px;
+  --space-3xl: 80px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+/* Typography tokens */
+
+.text-display {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 120px;
+  line-height: 0.85;
+  letter-spacing: -0.01em;
+}
+
+.text-h1 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.text-h2 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.text-h3 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.text-body-lg {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.text-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text-label {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.text-caption {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
